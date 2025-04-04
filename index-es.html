@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorZ - Tu Asistente Virtual de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">StorZ</div>
+            <div class="nav-links">
+                <a href="#home">Inicio</a>
+                <a href="#problem">Problema</a>
+                <a href="#how-it-works">Solución</a>
+                <a href="#why-storz">Beneficios</a>
+                <a href="#contact" class="cta-button">Empieza Hoy</a>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn">English</button>
+                <button class="lang-btn active">Español</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>El Asistente Virtual de compras</h1>
+                    <p>Ayuda a tus clientes, mejora tus servicios, impulsa las ventas y desbloquea nuevas fuentes de ingresos sin aumentar costos.</p>
+                    <div class="hero-buttons">
+                        <button class="secondary-button">Solicitar Demo</button>
+                    </div>
+                </div>
+                <div class="hero-video">
+                    <video autoplay loop muted playsinline loading="lazy" preload="none" poster="video-poster.jpg">
+                        <source src="storz.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="floating-phone">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div class="app-logo">StorZ</div>
+                                <div class="app-status">Supermercado</div>
+                            </div>
+                            <div class="app-content">
+                                <div class="chat-container">
+                                    <div class="messages-wrapper">
+                                        <!-- El contenido del chat será insertado por JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <div class="stats-intro">
+
+                <h2>Asistencia personalizada para cada cliente no es un lujo, es una necesidad.</h2>
+            </div>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>20</h3>
+                    <p>Aumento en<br>Ingresos de Tienda</p>
+                </div>
+                <div class="stat-card">
+                    <h3>60</h3>
+                    <p>Mayor Comunicación<br>con Clientes</p>
+                </div>
+                <div class="stat-card">
+                    <h3>40</h3>
+                    <p>Mejora en Satisfacción<br>del Cliente</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="problem">
+            <div class="problem-header">
+                <h2>Más del 20% de las Ventas se Pierden</h2>
+                <p class="subtitle">Los clientes esperan que los minoristas Guíen, Resuelvan y Vendan.<br>La mayoría de las tiendas solo venden y los clientes deben resolverlo por su cuenta.</p>
+            </div>
+            
+            <div class="problem-container">
+                <div class="problem-content">
+                    <div class="benefits-grid">
+                       
+                        <div class="benefit-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Las Busquedas Online Interrumpen las Compras en Tienda</h3>
+                                <p>Más del 90% de los consumidores usan navegadores web para investigar, terminando en el sitio web de tu competencia.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Los Compradores Tienen Tiempo Limitado</h3>
+                                <p>Necesitan una forma rápida y fácil de encontrar lo que necesitan.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Los Compradores Evitan el Contacto con el Personal</h3>
+                                <p>Algunos clientes son tímidos, tienen barreras del idioma o no quieren sentirse presionados a comprar por el personal.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Personal Ocupado o Sin Conocimiento Suficiente</h3>
+                                <p>Incluso los buenos empleados no pueden ser expertos en productos 24/7.</p>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="benefit-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Sin Información sobre el Comportamiento del Comprador</h3>
+                                <p>No sabes por qué la gente se va o qué querían.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="problem-image">
+                        <img src="arrow.png" alt="Panel de Control StorZ" class="dashboard-image">
+                    </div>
+                </div>
+            </div>
+            <div class="problem-conclusion">
+                <p><span class="storz-text">StorZ</span> es exactamente lo que necesitas para cerrar la brecha entre las expectativas de los clientes y la realidad de la tienda.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="section-header">
+                <h2>Un asistente de compras personal para cada uno de tus clientes</h2>
+                <p class="subtitle">Simple y fácil de usar, StorZ proporciona respuestas en menos de 5 segundos.</p>
+            </div>
+            <div class="how-it-works-content">
+                <div class="steps-column">
+                    <div class="step-item" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Conexión Automática</h3>
+                            <p>La app StorZ usa la ubicación del cliente para conectarlo automáticamente a la interfaz de tu tienda cuando están cerca.</p>
+                        </div>
+                    </div>
+                    <div class="step-item" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Obtén Asistencia Inteligente</h3>
+                            <p>La IA proporciona instantáneamente ayuda personalizada, sugerencias de productos y los guía por la tienda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-carousel-column">
+                    <div class="image-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slide" data-step="1">
+                                <img src="Slide1.PNG" alt="Conectar a la Tienda" class="carousel-image">
+                            </div>
+                            <div class="carousel-slide" data-step="2">
+                                <img src="Slide2.PNG" alt="App Garden Central" class="carousel-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-storz" class="why-storz">
+            <div class="section-header">
+                <h2>StorZ es tu mejor empleado</h2>
+                <p class="subtitle">La forma más rentable de impulsar las ventas y la satisfacción del cliente.</p>
+            </div>
+            <div class="solutions-container">
+                <div class="solutions-grid">
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Guía 24/7</h3>
+                            <p>Un asistente experto siempre disponible para todos tus clientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Asistencia Instantánea</h3>
+                            <p>Proporciona respuestas en menos de 5 segundos.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Potencia a tus Asociados</h3>
+                            <p>Capacita al personal nuevo y experimentado para brindar soporte experto desde el primer día.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Publicidad Personalizada en Tienda</h3>
+                            <p>Genera una oportunidad única para la colocación de anuncios, todo bajo tu control.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Tu Tienda, Tu Marca</h3>
+                            <p>La interfaz de StorZ es totalmente personalizable según la marca de tu tienda.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Ventas cruzadas</h3>
+                            <p>Capaz de entender lo que los clientes necesitan y sugerir productos relacionados de tu tienda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Información Detallada del Cliente</h3>
+                            <p>Rastrea el comportamiento y las preferencias del cliente para optimizar la experiencia de tu tienda.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution-item">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="solution-content">
+                            <h3>Tu Tienda, Tus Datos</h3>
+                            <p>Todos los datos del cliente están protegidos y los datos de tu tienda son tuyos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-storz-image">
+                    <img src="phones.png" alt="Panel de Control StorZ" class="floating-dashboard">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="get-started-content">
+                <h2>Comienza Ahora</h2>
+                <p class="subtitle">Únete al futuro del comercio minorista hoy</p>
+                <div class="shopping-illustration">
+                    <img src="cart.png" alt="Ilustración de Compras" class="floating-image">
+                </div>
+            </div>
+            <div class="form-container">
+                <form class="contact-form">
+                    <div class="name-group">
+                        <div class="form-group">
+                            <input type="text" id="first-name" name="first-name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="last-name" name="last-name" placeholder="Apellido" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="form-group">
+                        <select id="retail-sector" name="retail-sector" required>
+                            <option value="" disabled selected>Selecciona tu subsector minorista</option>
+                            <option value="grocery">Supermercado</option>
+                            <option value="fashion">Moda y Ropa</option>
+                            <option value="electronics">Electrónica</option>
+                            <option value="home">Hogar y Jardín</option>
+                            <option value="sports">Deportes y Aire Libre</option>
+                            <option value="beauty">Salud y Belleza</option>
+                            <option value="toys">Juguetes y Juegos</option>
+                            <option value="other">Otro Minorista</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Empezar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 StorZ. Todos los derechos reservados. Unpuzzlers Corp.</p>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
