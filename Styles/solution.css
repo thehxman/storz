@@ -1,0 +1,448 @@
+/* Solution section styles */ 
+/* Solution Section - Updated Layout */
+.solution {
+    padding: 140px 20px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .solution .section-header {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 80px;
+  }
+  
+  .solution .section-header .eyebrow {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .solution .section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    background: linear-gradient(90deg, #1d4ed8 0%, #3b82f6 25%, #60a5fa 50%, #3b82f6 75%, #1d4ed8 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    position: relative;
+  }
+  
+  .solution .section-header.animate-in h2 {
+    animation:
+        titleSlideIn 0.8s ease-out forwards,
+        titleShine 3s linear infinite,
+        titlePulse 2s ease-in-out infinite;
+  }
+  
+  .solution .section-header .subtitle {
+    font-size: 1.2rem;
+    color: #4A5568;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  /* Mobile layout is hidden by default */
+  .mobile-layout {
+    display: none;
+  }
+  
+  /* Mobile groups styling */
+  .mobile-group {
+    width: 100%;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .mobile-step {
+    padding: 24px 20px;
+    background-color: #f9fafc;
+    position: relative;
+    text-align: left;
+  }
+  
+  .mobile-step .step-number {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: #5978cf;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(255, 107, 61, 0.3);
+  }
+  
+  .mobile-step .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background: #FFF2EE;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-step .icon-wrapper i {
+    font-size: 28px;
+    color: #4566c2;
+  }
+  
+  .mobile-step .step-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  .mobile-step .step-content p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .mobile-image {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .mobile-slide-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Desktop layout styling */
+  .desktop-layout {
+    display: block;
+  }
+  
+  /* New 2-column layout container */
+  .solution-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Equal columns */
+    gap: 60px; /* Adjust gap as needed */
+    align-items: center; /* Vertically align items in columns */
+  }
+  
+  /* Column for the text steps */
+  .steps-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between step items */
+  }
+  
+  /* Remove styles associated with the old full-width steps container */
+  .steps-container::before {
+    display: none; /* Remove the horizontal line */
+  }
+  
+  /* Keep existing Step Item styles, they should work fine */
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .step-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    background: #5978cf;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(255, 107, 61, 0.3);
+  }
+  
+  .step-item .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background: #FFF2EE;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .step-item:hover .icon-wrapper {
+    transform: scale(1.1);
+    background: #385bbb;
+  }
+  
+  .step-item .icon-wrapper i {
+    font-size: 28px;
+    color: #4566c2;
+    transition: all 0.3s ease;
+  }
+  
+  .step-item:hover .icon-wrapper i {
+    color: white;
+  }
+  
+  .step-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 12px;
+  }
+  
+  .step-content p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Column for the image carousel */
+  .image-carousel-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-carousel {
+    width: 100%;
+   
+    aspect-ratio: 9/12;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 0;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding: 0;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  object-position: center;
+  display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .carousel-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Tablet screens */
+  @media (max-width: 1024px) {
+    .image-carousel {
+        max-width: 500px;
+    }
+    .solution .section-header h2 {
+        font-size: 2.2rem;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 768px) {
+    .solution {
+        padding: 60px 0;
+    }
+  
+    .solution .section-header {
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+  
+    .solution .section-header h2 {
+        font-size: 1.8rem;
+    }
+  
+    .solution .section-header .subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+  
+    /* Switch layouts - hide desktop, show mobile */
+    .desktop-layout {
+        display: none !important;
+    }
+    
+    .mobile-layout {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .mobile-group {
+        width: 100%;
+        margin-bottom: 30px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.5s ease-out;
+    }
+
+    .mobile-group.animate-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Stagger animation for each mobile-group */
+    .mobile-group:nth-child(1).animate-in {
+        transition-delay: 0.1s;
+    }
+    
+    .mobile-group:nth-child(2).animate-in {
+        transition-delay: 0.3s;
+    }
+    
+    .mobile-group:nth-child(3).animate-in {
+        transition-delay: 0.5s;
+    }
+
+    .mobile-step {
+        position: relative;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: all 0.5s ease-out;
+    }
+    
+    .mobile-group.animate-in .mobile-step {
+        opacity: 1;
+        transform: translateX(0);
+        transition-delay: 0.2s;
+    }
+    
+    .mobile-image {
+        width: 100%;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: all 0.5s ease-out;
+    }
+    
+    .mobile-group.animate-in .mobile-image {
+        opacity: 1;
+        transform: scale(1);
+        transition-delay: 0.4s;
+    }
+
+    .mobile-slide-image {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    /* Pulse animation for step numbers */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 4px 12px rgba(255, 107, 61, 0.3);
+        }
+        50% {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 107, 61, 0.5);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 4px 12px rgba(255, 107, 61, 0.3);
+        }
+    }
+    
+    .mobile-step .step-number {
+        animation: pulse 3s infinite ease-in-out;
+    }
+    
+    /* Subtle shimmer effect for icons */
+    @keyframes iconShimmer {
+        0% {
+            background-position: -100% 0;
+        }
+        100% {
+            background-position: 200% 0;
+        }
+    }
+    
+    .mobile-step .icon-wrapper {
+        background: linear-gradient(90deg, #FFF2EE, #EEF2FF, #FFF2EE);
+        background-size: 200% 100%;
+        animation: iconShimmer 3s infinite linear;
+    }
+  }
+
+  /* Add JavaScript to trigger animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

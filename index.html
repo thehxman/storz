@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ======================
+         SEO & META TAGS
+         ====================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorZ – AI Shopping Assistant for Smarter Retail Experiences</title>
+    <meta name="description" content="StorZ is a virtual AI shopping assistant that helps retailers increase revenue, boost customer satisfaction, and automate in-store engagement.">
+    <meta name="keywords" content="AI shopping assistant, smart retail, virtual assistant, customer experience, in-store engagement, retail AI, StorZ, Unpuzzlers">
+    <meta name="author" content="Unpuzzlers Corp.">
+    <meta name="robots" content="index, follow">
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.storz.ai/">
+    <meta property="og:title" content="StorZ – Smarter In-Store Shopping with AI">
+    <meta property="og:description" content="Turn every shopper into a loyal customer with AI-driven guidance, insights, and sales tools.">
+    <meta property="og:image" content="https://www.storz.ai/images/preview.jpg">
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.storz.ai/">
+    <meta name="twitter:title" content="StorZ – Smarter In-Store Shopping with AI">
+    <meta name="twitter:description" content="Turn every shopper into a loyal customer with AI-driven guidance, insights, and sales tools.">
+    <meta name="twitter:image" content="https://www.storz.ai/images/preview.jpg">
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    </noscript>
+  
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+    <!-- ======================
+         HEADER & NAVIGATION
+         ====================== -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">StorZ</a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#problem">Problem</a>
+                <a href="#solution">Solution</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#contact" class="cta-button">Get Started Today</a>
+                <div class="language-selector">
+             <!--         <button class="lang-btn active">English</button>
+                     <button class="lang-btn">Español</button>=== -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-menu-overlay"></div>
+
+    <main>
+        <!-- ======================
+             HERO SECTION
+             ====================== -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>The AI-Assistant Powering Smarter Retail</h1>
+                    <p> From small boutiques to big box stores - StorZ helps every customer, enhances
+                        services, boosts sales, and unlocks new revenue streams without adding headcount. </p>
+                    <div class="hero-buttons">
+                        <button class="secondary-button">Book a Demo</button>
+                    </div>
+                </div>
+                <div class="hero-video">
+                    <video autoplay loop muted playsinline loading="lazy" preload="none"
+                        poster="images/video-poster.jpg">
+                        <source src="images/storz.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="floating-phone">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div class="app-logo">StorZ</div>
+                                <div class="app-status">Grocery Store</div>
+                            </div>
+                            <div class="app-content">
+                                <div class="chat-container">
+                                    <div class="messages-wrapper">
+                                        <!-- Chat content will be dynamically inserted by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================
+             STATS SECTION
+             ====================== -->
+        <section class="stats">
+            <div class="stats-intro">
+                <p class="eyebrow">Numbers Don't Lie</p>
+                <h2>Personalized Shopping Assistance is not a luxury anymore,</br>it's the norm.</h2>
+            </div>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>20</h3>
+                    <p>Increase in<br>Store Revenue</p>
+                </div>
+                <div class="stat-card">
+                    <h3>60</h3>
+                    <p>Higher Customer<br>Engagement</p>
+                </div>
+                <div class="stat-card">
+                    <h3>40</h3>
+                    <p>Improved Customer<br>Satisfaction</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================
+             PROBLEM SECTION
+             ====================== -->
+        <section id="problem" class="problem">
+            <div class="problem-header animate-in">
+                <p class="eyebrow">THE RETAIL CHALLENGE</p>
+                <h2>Over 20% of Sales are Falling Through the Cracks</h2>
+                <p class="subtitle">
+                    Shoppers expect retailers to guide, solve, and instill confidence. Most simply display products and hope for the best. Here’s where it falls apart:
+                </p>
+            </div>
+
+            <div class="problem-container">
+                <div class="problem-content">
+                    <div class="problems-grid">
+
+                        <div class="problem-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-door-open"></i>
+                            </div>
+                            <div class="problem-text">
+                                <h3>No Guidance at Entry</h3>
+                                <p>Shoppers walk in and often don’t know where to start. There’s no clear path, no visible support, and no easy way to ask for help.</p>
+                            </div>
+                        </div>
+
+                        <div class="problem-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                            </div>
+                            <div class="problem-text">
+                                <h3>Too Many Choices, too little information</h3>
+                                <p>Endless options with no context. Shoppers don’t know what fits their needs or what sets products apart.</p>
+                            </div>
+                        </div>
+
+                        <div class="problem-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="problem-text">
+                                <h3>Missing Product Information</h3>
+                                <p>Shoppers have specific, situational questions—“Will this work for me?” “What’s the difference?” The shelf doesn’t explain, and staff often can’t.</p>
+                            </div>
+                        </div>
+
+                        <div class="problem-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-user-slash"></i>
+                            </div>
+                            <div class="problem-text">
+                                <h3>Questions Left Unasked</h3>
+                                <p>Many shoppers hold back—they don’t want to seem uninformed, bother staff, or invite a sales pitch. So their questions go unanswered.</p>
+                            </div>
+                        </div>
+
+                        <div class="problem-item">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <div class="problem-text">
+                                <h3>No Insight Into Buyer Behavior</h3>
+                                <p>When someone leaves without buying, there's no way to know what went wrong or what they needed.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="problem-image">
+                        <img src="images/arrow.png" alt="StorZ Dashboard" class="dashboard-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-conclusion">
+                <p><span class="storz-text">StorZ</span> is exactly what you need to close the gap between customers'
+                    expectations and store reality.</p>
+            </div>
+        </section>
+
+
+        <!-- ======================
+             SOLUTION SECTION
+             ====================== -->
+        <section id="solution" class="solution">
+            <div class="section-header animate-in">
+                <p class="eyebrow">THE STORZ SOLUTION</p>
+                <h2>A personal shopping assistant for each one of your customers</h2>
+                <p class="subtitle">Simple and easy to use, StorZ provides answers in under 5 seconds.</p>
+            </div>
+            <!-- Desktop Layout - Only visible on larger screens -->
+            <div class="desktop-layout">
+                <div class="solution-content">
+                    <div class="steps-column">
+                        <div class="step-group">
+                            <div class="step-item" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Auto-Connect</h3>
+                                    <p>StorZ app uses customer's location to automatically connect them to your store's
+                                        interface when they're nearby.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="step-group">
+                            <div class="step-item" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-robot"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Get Smart Assistance</h3>
+                                    <p>AI instantly provides personalized help, product suggestions, and guides them through
+                                        the store.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="image-carousel-column">
+                        <div class="image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide" data-step="1">
+                                    <img src="images/Slide1.PNG" alt="Connect to Store" class="carousel-image">
+                                </div>
+                                <div class="carousel-slide" data-step="2">
+                                    <img src="images/Slide2.PNG" alt="Garden Central App" class="carousel-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Layout - Only visible on mobile screens -->
+            <div class="mobile-layout">
+                <div class="mobile-group">
+                    <div class="mobile-step">
+                        <div class="step-number">1</div>
+                        <div class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="step-content">
+                            <h3>Auto-Connect</h3>
+                            <p>StorZ app uses customer's location to automatically connect them to your store's interface
+                                when they're nearby.</p>
+                        </div>
+                    </div>
+                    <div class="mobile-image">
+                        <img src="images/Slide1.PNG" alt="Connect to Store" class="mobile-slide-image">
+                    </div>
+                </div>
+
+                <div class="mobile-group">
+                    <div class="mobile-step">
+                        <div class="step-number">2</div>
+                        <div class="icon-wrapper"><i class="fa-solid fa-robot"></i></div>
+                        <div class="step-content">
+                            <h3>Get Smart Assistance</h3>
+                            <p>AI instantly provides personalized help, product suggestions, and guides them through the
+                                store.</p>
+                        </div>
+                    </div>
+                    <div class="mobile-image">
+                        <img src="images/Slide2.PNG" alt="Garden Central App" class="mobile-slide-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================
+             BENEFITS SECTION
+             ====================== -->
+            <section id="benefits" class="benefits">
+                <div class="section-header animate-in">
+                    <p class="eyebrow">UNPARALLELED BENEFITS</p>
+                    <h2>StorZ is your best employee</h2>
+                    <p class="subtitle">The most cost effective way to boost sales and customer satisfaction.</p>
+                </div>
+                <div class="benefits-container">
+                    <div class="benefits-grid">
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-compass"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>24/7 Guidance</h3>
+                                <p>An expert assistant always available to all your customers.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Instant Assistance</h3>
+                                <p>Provides answers in under 5 seconds.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Supercharges Your Associates</h3>
+                                <p>Empowers new and experienced staff alike to provide expert customer support from day one.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Cross-Selling</h3>
+                                <p>Capable of understanding customer needs and suggesting complementary items from your
+                                    store.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>In-Store Personalized Advertising</h3>
+                                <p>It generates a unique opportunity for ad placement, all under your control.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Your Store, Your Brand</h3>
+                                <p>StorZ' interface is fully customizable to your store's branding.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Rich Customer Insights</h3>
+                                <p>Track customer behavior and preferences to optimize your store experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item animate">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Your Store, Your Data</h3>
+                                <p>All customer data is protected and your store's data is yours to keep.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="benefits-image">
+                        <img src="images/phones.png" alt="StorZ Dashboard" class="floating-dashboard">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================
+             CONTACT SECTION
+             ====================== -->
+            <section id="contact" class="contact">
+                <div class="contact-container">
+                    <div class="get-started-content">
+                        <div class="shopping-illustration"
+                            style="position: absolute; top: -230px; left: -90px; width: 600px; z-index: 1; opacity: 0.15;">
+                            <img src="images/cart.png" alt="Shopping Illustration" class="floating-image">
+                        </div>
+                        <h2>Get Started</h2>
+                        <p class="subtitle">Join the future of retail today</p>
+                    </div>
+                    <div class="form-container">
+                        <form class="contact-form" action="https://formspree.io/f/xoveropd" method="POST">
+                            <input type="hidden" name="_subject" value="New Contact Submission from StorZ">
+                            
+                            <div class="name-group">
+                                <div class="form-group">
+                                    <input type="text" id="first-name" name="first-name" placeholder="First" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                            </div>
+                            
+                            <div class="form-group">
+                                <select id="retail-sector" name="retail-sector" required>
+                                    <option value="" disabled selected>Select your retail subsector</option>
+                                    <option value="grocery">Grocery</option>
+                                    <option value="fashion">Fashion & Apparel</option>
+                                    <option value="electronics">Electronics</option>
+                                    <option value="home">Home & Garden</option>
+                                    <option value="sports">Sports & Outdoors</option>
+                                    <option value="beauty">Health & Beauty</option>
+                                    <option value="toys">Toys & Games</option>
+                                    <option value="other">Other Retail</option>
+                                </select>
+                            </div>
+                        
+                            <button type="submit" class="submit-button">Get Started</button>
+                        </form>                        
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- ======================
+         FOOTER
+         ====================== -->
+         <footer>
+            <p>&copy; 2025 StorZ. All rights reserved. <a href="https://www.unpuzzlers.com" target="_blank" rel="noopener noreferrer">Unpuzzlers Corp.</a></p>
+          </footer>
+
+    <!-- ======================
+         IMAGE MODAL
+         ====================== -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption"></div>
+    </div>
+
+    <!-- ======================
+         SCRIPTS
+         ====================== -->
+    <script type="module" src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+
+            function toggleMenu() {
+                mobileMenuBtn.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+            }
+
+            function closeMenu() {
+                mobileMenuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            mobileMenuBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                toggleMenu();
+            });
+
+            overlay.addEventListener('click', function () {
+                closeMenu();
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        closeMenu();
+                    }
+                });
+            });
+
+            // Close menu on window resize if open
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+                    closeMenu();
+                }
+            });
+
+            // Close menu when clicking anywhere else on the page
+            document.addEventListener('click', function (e) {
+                const isClickInsideMenu = navLinks.contains(e.target);
+                const isClickOnMenuButton = mobileMenuBtn.contains(e.target);
+
+                if (!isClickInsideMenu && !isClickOnMenuButton && navLinks.classList.contains('active')) {
+                    closeMenu();
+                }
+            });
+
+            // Image Modal functionality
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const closeModal = document.querySelector('.close-modal');
+            const carouselImages = document.querySelectorAll('.carousel-image');
+            const solutionCarouselImages = document.querySelectorAll('.solution .carousel-image');
+            const mobileSlideImages = document.querySelectorAll('.mobile-slide-image');
+
+            // Add mobile slide images to clickable images
+            mobileSlideImages.forEach(img => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    modal.style.display = 'block';
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    document.querySelector('.modal-caption').textContent = this.alt;
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Add solution carousel images to the clickable images
+            solutionCarouselImages.forEach(img => {
+                img.style.cursor = 'pointer'; // Add pointer cursor to show it's clickable
+                img.addEventListener('click', function () {
+                    modal.style.display = 'block';
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    document.querySelector('.modal-caption').textContent = this.alt;
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+                });
+            });
+
+            // For other carousel images
+            carouselImages.forEach(img => {
+                if (!img.closest('.solution')) { // Skip solution images as they're already handled
+                    img.addEventListener('click', function () {
+                        modal.style.display = 'block';
+                        modalImg.src = this.src;
+                        modalImg.alt = this.alt;
+                        document.querySelector('.modal-caption').textContent = this.alt;
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+                    });
+                }
+            });
+
+            closeModal.addEventListener('click', function () {
+                modal.style.display = 'none';
+                modalImg.classList.remove('zoomed');
+                modalImg.style.transform = 'translate(-50%, -50%)';
+                document.body.style.overflow = '';
+            });
+
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    modalImg.classList.remove('zoomed');
+                    modalImg.style.transform = 'translate(-50%, -50%)';
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Add zoom functionality
+            let isDragging = false;
+            let startX, startY, translateX = 0, translateY = 0;
+
+            modalImg.addEventListener('click', function (e) {
+                if (!this.classList.contains('zoomed')) {
+                    // Zoom in
+                    this.classList.add('zoomed');
+                    // Reset position when zooming in
+                    translateX = 0;
+                    translateY = 0;
+                    this.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                } else {
+                    // If already zoomed and not dragging, zoom out
+                    if (!isDragging) {
+                        this.classList.remove('zoomed');
+                        translateX = 0;
+                        translateY = 0;
+                        this.style.transform = 'translate(-50%, -50%)';
+                    }
+                    isDragging = false;
+                }
+            });
+
+            // Add drag functionality when zoomed
+            modalImg.addEventListener('mousedown', function (e) {
+                if (this.classList.contains('zoomed')) {
+                    isDragging = true;
+                    this.classList.add('dragging'); // Add class to disable transitions
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                    e.preventDefault(); // Prevent image drag default behavior
+                }
+            });
+
+            modalImg.addEventListener('mousemove', function (e) {
+                if (isDragging && this.classList.contains('zoomed')) {
+                    e.preventDefault();
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+
+                    // Limit translation to prevent image from going too far off screen
+                    const maxTranslate = 300; // Maximum pixels to drag in any direction
+                    translateX = Math.max(-maxTranslate, Math.min(translateX, maxTranslate));
+                    translateY = Math.max(-maxTranslate, Math.min(translateY, maxTranslate));
+
+                    this.style.transform = `translate(-50%, -50%) scale(1.5) translate(${translateX / 1.5}px, ${translateY / 1.5}px)`;
+                }
+            });
+
+            modalImg.addEventListener('mouseup', function () {
+                isDragging = false;
+                this.classList.remove('dragging'); // Remove the class when done dragging
+            });
+
+            modalImg.addEventListener('mouseleave', function () {
+                isDragging = false;
+                this.classList.remove('dragging'); // Remove the class when cursor leaves
+            });
+
+            // Touch support for mobile devices
+            modalImg.addEventListener('touchstart', function (e) {
+                if (this.classList.contains('zoomed')) {
+                    isDragging = true;
+                    this.classList.add('dragging'); // Add class to disable transitions
+                    startX = e.touches[0].clientX - translateX;
+                    startY = e.touches[0].clientY - translateY;
+                    e.preventDefault(); // Prevent default touch behavior
+                }
+            }, { passive: false });
+
+            modalImg.addEventListener('touchmove', function (e) {
+                if (isDragging && this.classList.contains('zoomed')) {
+                    translateX = e.touches[0].clientX - startX;
+                    translateY = e.touches[0].clientY - startY;
+
+                    // Limit translation
+                    const maxTranslate = 300;
+                    translateX = Math.max(-maxTranslate, Math.min(translateX, maxTranslate));
+                    translateY = Math.max(-maxTranslate, Math.min(translateY, maxTranslate));
+
+                    this.style.transform = `translate(-50%, -50%) scale(1.5) translate(${translateX / 1.5}px, ${translateY / 1.5}px)`;
+                    e.preventDefault(); // Prevent scrolling while dragging
+                }
+            }, { passive: false });
+
+            modalImg.addEventListener('touchend', function () {
+                isDragging = false;
+                this.classList.remove('dragging'); // Remove the class when touch ends
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    modalImg.classList.remove('zoomed');
+                    modalImg.style.transform = 'translate(-50%, -50%)';
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+    <script src="scroll-animations.js"></script>
+</body>
+
+</html>
