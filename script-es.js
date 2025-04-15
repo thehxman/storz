@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => addChatItem(chatSequences[sequences[currentSequenceIndex]][0]), 1000);
 
-    // ================================
+     // ================================
     // 📉 Problem Section: Dashboard Image Movement (Mouse + Device)
     // ================================
     const problemImage = document.querySelector('.problem-image');
@@ -248,5 +248,147 @@ document.addEventListener('DOMContentLoaded', () => {
                 rotate(${x * 5}deg)
             `;
         });
+
+        problemImage.addEventListener('mouseleave', () => {
+            arrowImage.style.transform = 'translate(0, 0) rotate(0deg)';
+        });
+
+        if (window.DeviceMotionEvent) {
+            window.addEventListener('devicemotion', (e) => {
+                const x = e.accelerationIncludingGravity.x * 2;
+                const y = e.accelerationIncludingGravity.y * 2;
+
+                arrowImage.style.transform = `
+                    translate(${x}px, ${y}px)
+                    rotate(${x}deg)
+                `;
+            });
+        }
     }
-}); 
+
+    // ================================
+    // 💡 Scroll Reveal for All Sections (Benefits, solution, Problem)
+    // ================================
+    function initScrollReveal() {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.6
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        const elements = document.querySelectorAll(
+            '.stat-card, .problemtext-item, .step-group, .benefit-item, .problem-header'
+        );
+
+        elements.forEach(el => {
+            el.classList.add('reveal-on-scroll');
+            observer.observe(el);
+        });
+    }
+
+    initScrollReveal();
+
+    // ================================
+    // 📏 Responsive Fixes: Reinit ScrollReveal on Resize
+    // ================================
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => el.classList.remove('revealed'));
+            initScrollReveal();
+        }, 250);
+    });
+
+    // ================================
+    // 📋 Problem Section: Toggle Expandable Items
+    // ================================
+    const problemItems = document.querySelectorAll('.problem-item');
+    problemItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Check if this item is already expanded
+            const isExpanded = item.classList.contains('expanded');
+
+            // Close other items when clicking a new item
+            problemItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('expanded')) {
+                    otherItem.classList.remove('expanded');
+                }
+            });
+
+            // Toggle the current item
+            if (isExpanded) {
+                // Close this item if it's already expanded
+                item.classList.remove('expanded');
+            } else {
+                // Open this item if it's not expanded
+                item.classList.add('expanded');
+            }
+        });
+    });
+
+    // ================================
+    // 🎁 Benefits Section: Toggle Expandable Items (Accordion)
+    // ================================
+    const benefitItems = document.querySelectorAll('.benefit-item');
+    benefitItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Check if this item is already expanded
+            const isExpanded = item.classList.contains('expanded');
+
+            // Close other items when clicking a new item
+            benefitItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('expanded')) {
+                    // Hide paragraph for other items
+                    const paragraph = otherItem.querySelector('.benefit-content p');
+                    otherItem.classList.remove('expanded');
+                    paragraph.style.maxHeight = '0';
+                    paragraph.style.opacity = '0';
+
+                    // Use setTimeout to allow the transition to complete before hiding
+                    setTimeout(() => {
+                        paragraph.style.display = 'none';
+                        paragraph.style.visibility = 'hidden';
+                    }, 300); // Match this to your transition duration
+                }
+            });
+
+            // Toggle the current item
+            if (isExpanded) {
+                // Close this item if it's already expanded
+                const paragraph = item.querySelector('.benefit-content p');
+                item.classList.remove('expanded');
+                paragraph.style.maxHeight = '0';
+                paragraph.style.opacity = '0';
+
+                // Use setTimeout to allow the transition to complete before hiding
+                setTimeout(() => {
+                    paragraph.style.display = 'none';
+                    paragraph.style.visibility = 'hidden';
+                }, 300);
+            } else {
+                // Open this item if it's not expanded
+                item.classList.add('expanded');
+                const paragraph = item.querySelector('.benefit-content p');
+                paragraph.style.display = 'block';
+                paragraph.style.visibility = 'visible';
+
+                // Use setTimeout to allow the display change to take effect first
+                setTimeout(() => {
+                    paragraph.style.maxHeight = '200px';
+                    paragraph.style.opacity = '1';
+                }, 10);
+            }
+        });
+    });
+
+});
