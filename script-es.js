@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const lang = button.textContent.toLowerCase();
             if (lang === 'english') window.location.href = 'index.html';
-            else if (lang === 'español') window.location.href = 'index-es.html';
+            else if (lang === 'español') window.location.href = 'es.html';
         });
     });
 
